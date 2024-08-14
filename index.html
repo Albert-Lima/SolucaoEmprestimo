@@ -7,10 +7,23 @@
     <title>Solução</title>
 </head>
 <body>
+    <a href="https://wa.me/5511945876406" target="_blank" rel="noopener noreferrer" id="ButtonWhatsapp">
+        <img src="public/img/WhatsApp.png" alt="Tirar dúvidas no Whatsapp">
+    </a>
     <header id="HeaderTopPage">
         <div class="beforeGlitterBox">
-            <span><img src="public/img/NewGlitter.png" alt="Imagem de Glitter Top"></span>
-            <span><img src="public/img/NewGlitter.png" alt="Imagem de Glitter Bottom"></span>
+            <picture>
+                <source srcset="public/img/GlitterP.png" media="(min-width: 400px)">
+                <source srcset="public/img/GlitterM.png" media="(min-width: 800px)">
+                <source srcset="public/img/GlitterG.png" media="(min-width: 1200px)">
+                <img src="public/img/GlitterG.png" alt="Imagem glitter decorativo">
+            </picture>
+            <picture>
+                <source srcset="public/img/GlitterP.png" media="(min-width: 400px)">
+                <source srcset="public/img/GlitterM.png" media="(min-width: 800px)">
+                <source srcset="public/img/GlitterG.png" media="(min-width: 1200px)">
+                <img src="public/img/GlitterG.png" alt="Imagem glitter decorativo">
+            </picture>
         </div>
         <section class="sectionLogo">
             <span class="logo">
@@ -149,46 +162,60 @@
 
     <section class="formSimule">
         <h1 class="titles"> Simular Empréstimo</h1>
-        <form action="" id="formSolicite">
+        <form id="formSolicite">
             <section class="ContentPartInput">
                 <section>
                     <div class="inputsBox">
                         <label for="">Nome Completo:</label>
-                        <input type="text" class="inputFormSolicite">
+                        <input type="text" class="inputFormSolicite" id="NameField">
                     </div>
                     <div class="inputsBox">
                         <label for="">Email:</label>
-                        <input type="email" class="inputFormSolicite">
+                        <input type="email" class="inputFormSolicite" id="EmailField">
                     </div>
                     <div class="inputsBox">
                         <label for="">Valor do Empréstimo:</label>
-                        <input type="number" class="inputFormSolicite">
+                        <input type="number" class="inputFormSolicite" id="EmprestimoVAlueField">
                     </div>
                 </section>
                 <section>
                     <div class="inputsBox">
                         <label for="">CPF/CNPJ:</label>
-                        <input type="text" class="inputFormSolicite">
+                        <input type="text" class="inputFormSolicite" id="DocumentField">
                     </div>
                     <div class="inputsBox">
                         <label for="">DDD + Telefone (Whatsapp):</label>
-                        <input type="tel" class="inputFormSolicite">
+                        <input type="tel" class="inputFormSolicite" id="PhoneFiled">
                     </div>
                 </section>
             </section>
-            <button type="submit" class="buttonSubmitFormSolicite">SOLICITAR SIMULÇÃO</button>
+            <button type="button" class="buttonSubmitFormSolicite">SOLICITAR SIMULÇÃO</button>
         </form>
     </section>
 
 
     <footer class="FooterPage">
         <div class="beforeGlitterBoxFooter">
-            <span><img src="public/img/NewGlitter.png" alt="Imagem de Glitter Top"></span>
-            <span><img src="public/img/NewGlitter.png" alt="Imagem de Glitter Bottom"></span>
+            <picture>
+                <source srcset="public/img/GlitterP.png" media="(min-width: 400px)">
+                <source srcset="public/img/GlitterM.png" media="(min-width: 800px)">
+                <source srcset="public/img/GlitterG.png" media="(min-width: 1200px)">
+                <img src="public/img/GlitterG.png" alt="Imagem glitter decorativo">
+            </picture>
+            <picture>
+                <source srcset="public/img/GlitterP.png" media="(max-width: 400px)">
+                <source srcset="public/img/GlitterM.png" media="(max-width: 800px)">
+                <source srcset="public/img/GlitterG.png" media="(max-width: 1200px)">
+                <img src="public/img/GlitterG.png" alt="Imagem glitter decorativo">
+            </picture>
         </div>
         <section class="sectionLogoFooter">
             <span class="logoFooter">
-                <img src="public/img/scrnli_11_08_2024_09-40-33 (1) (1).png" alt="Logo da Solução Empréstimos">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="public/img/LogoStandart.png">
+                    <source media="(min-wi)">
+                    <img src="public/img/LogoG.png" alt="Logo da Solução Empréstimos">
+                </picture>
                 <span>SOLUÇÃO</span>
             </span>
             <p id="LogomarcaFooter">CRÉDITO RÁPIDO <br> PARA NEGATIVADOS</p>

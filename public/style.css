@@ -37,14 +37,14 @@ body{
     z-index: -1;
     background-color: black;
 }
-.beforeGlitterBox span:nth-child(1) img{
-    height: 450px;
+.beforeGlitterBox picture:nth-child(1) img{
+    max-height: 450px;
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.beforeGlitterBox span:nth-child(2) img{
-    height: 450px;
+.beforeGlitterBox picture:nth-child(2) img{
+    max-height: 450px;
     position: absolute;
     transform: rotate(180deg);
     left: 0px;
@@ -119,7 +119,7 @@ body{
 }
 @keyframes buttonCTA {
     0%{
-        transform: translateY(10px);
+        transform: translateY(0px);
     }
     100%{
         transform: translateY(-10px);
@@ -364,9 +364,6 @@ body{
     cursor: pointer;
 }
 
-
-
-
 .FooterPage{
     display: flex;
     flex-direction: column;
@@ -389,14 +386,14 @@ body{
     z-index: -1;
     background-color: black;
 }
-.beforeGlitterBoxFooter span:nth-child(1) img{
-    height: 450px;
+.beforeGlitterBoxFooter picture:nth-child(1) img{
+    max-height: 450px;
     position: absolute;
     top: 0px;
     right: 0px;
 }
-.beforeGlitterBoxFooter span:nth-child(2) img{
-    height: 450px;
+.beforeGlitterBoxFooter picture:nth-child(2) img{
+    max-height: 450px;
     position: absolute;
     transform: rotate(180deg);
     left: 0px;
@@ -435,4 +432,45 @@ body{
     font-size: 30pt;
     font-weight: regular;
     color: var(--var-ColorYellowClear)
+}
+
+
+
+#ButtonWhatsapp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10000;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.061));
+    animation-name: WhatsappIcon;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+}
+#ButtonWhatsapp:hover{
+    animation-play-state: paused;
+    transition: 0.2s;
+    scale: 1.1;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.12));
+}
+#ButtonWhatsapp img{
+    height: 70px;
+    width: 70px;
+}
+@keyframes WhatsappIcon {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

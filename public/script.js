@@ -26,3 +26,43 @@ document.addEventListener('DOMContentLoaded', () => {
         slides.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
 });
+
+//Função de Scroll Botão CTA
+var buttonToForm = document.querySelectorAll(".buttonToForm")
+var FormSection = document.querySelector(".formSimule")
+
+buttonToForm.forEach(button => {
+    button.addEventListener("click", ()=>{
+        let elementoRect1 = FormSection.getBoundingClientRect()
+        let centerY = elementoRect1.top
+        window.scrollTo({
+            top: centerY + window.scrollY,
+            behavior: 'smooth'
+        })
+    })
+})
+
+//Submit Form Function
+var NameField = document.querySelector("#NameField")
+var EmailField = document.querySelector("#EmailField")
+var EmprestimoValueField = document.querySelector("#EmprestimoVAlueField")
+var DocumentValor = document.querySelector("#DocumentField")
+var PhoneFiled = document.querySelector("#PhoneFiled")
+
+var buttonSubmit = document.querySelector(".buttonSubmitFormSolicite")
+
+buttonSubmit.addEventListener("click", ()=>{
+    var name = NameField.value
+    var email = EmailField.value
+    var value = EmprestimoValueField.value
+    var documento = DocumentValor.value
+    var phone = PhoneFiled.value
+
+    var messageWhatsapp = "https://wa.me/5585989390143?text=Nome Completo:%0A"+
+                            name+"%0A%0AEmail:%0A"+
+                            email+"%0A%0AValor do Empréstimo:%0A"+
+                            value+"%0A%0ACNPJ/CPF:%0A"+
+                            documento+"%0A%0ATelefone:%0A"+
+                            phone
+    window.open(messageWhatsapp, "_blank")
+})
