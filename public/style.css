@@ -1,0 +1,438 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'baskerville';
+    src: url("fonts/Baskerville Display PT Web.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'open sans';
+    src: url("fonts/OpenSans-VariableFont_wdth,wght.ttf") format('truetype');
+}
+:root{
+    --var-ColorYellowClear: #EECC6A;
+    --var-ColorYellowDark: #EECC6A;
+    --var-ColorIce: #FEFEFE;
+    --var-ColorIceDark: #808080;
+    --var-ColorContrastWhite: #8A6700;
+    --var-FontBakersville: 'baskerville';
+    --var-FontOpenSans: 'open sans';
+}
+
+body{
+    background-color: black;
+}
+
+.beforeGlitterBox{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-color: black;
+}
+.beforeGlitterBox span:nth-child(1) img{
+    height: 450px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.beforeGlitterBox span:nth-child(2) img{
+    height: 450px;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0px;
+    bottom: 0px;
+}
+
+
+#HeaderTopPage{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+.logo img{
+    height: 300px;
+    width: 330px;
+}
+.logo span{
+    font-family: var(--var-FontBakersville);
+    font-size: 50pt;
+    font-weight: regular;
+    color: var(--var-ColorYellowClear)
+}
+
+.sectionLogo{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#LogomarcaTop{
+    font-family: var(--var-FontBakersville);
+    font-weight: 100;
+    font-size: 30pt;
+    letter-spacing: 20px;
+    color: var(--var-ColorIce);
+    text-align: center;
+    margin-top: 20px;
+}
+.buttonToForm{
+    background-image: linear-gradient(to right, var(--var-ColorYellowDark), #FDF19F, var(--var-ColorYellowDark));
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+    font-weight: 500;
+    margin-top: 30px;
+    transform: translateY(30px);
+    box-shadow: 0px 0px 50px 10px #ead18835;
+    animation-duration: 1s;
+    animation-name: buttonCTA;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.buttonToForm:hover{
+    animation-play-state: paused;
+}
+@keyframes buttonCTA {
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.vantagensEmprestimo{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.titles{
+    color: var(--var-ColorYellowClear);
+    font-family: var(--var-FontBakersville);
+    font-size: 30pt;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-align: center;
+}
+.ContainerCards{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    gap: 40px;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    gap: 20px;
+    max-width: 300px;
+    border: 1px solid transparent;
+    padding:20px;
+}
+.Card:hover{
+    transition: 0.3s;
+    border: 1px solid var(--var-ColorYellowClear);
+    box-shadow: 0px 0px 20px 5px #ead18835;
+}
+.Card div img{
+    height: 30px;
+}
+.Card h2{
+    color: var(--var-ColorYellowClear);
+    font-family: var(--var-FontBakersville);
+    font-size: 13pt;
+    font-weight: 100;
+    text-align: center;
+}
+.Card p{
+    color: white;
+    font-family: var(--var-FontOpenSans);
+    font-size: 13pt;
+    font-weight: 200;
+    text-align: center;
+}
+
+.creditoParaSection{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.containerBeneftsInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 800px;
+    margin-top: 50px;
+    gap: 35px;
+}
+.boxBenefts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+.boxBenefts img{
+    height: 35px;
+}
+.boxBenefts p{
+    font-family: var(--var-FontBakersville);
+    font-size: 20pt;
+    color: var(--var-ColorIce);
+    letter-spacing: 10px;
+}
+
+
+.ClientDepoimentsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    height: max-content;
+    margin-top: 40px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.CardDepoiment {
+    flex: 0 0 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--var-ColorIce);
+    margin: 0 0px;
+    text-align: center;
+}
+.CardDepoiment p{
+    font-family: var(--var-FontOpenSans);
+    font-size: 14pt;
+}
+.carousel-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 80px;
+    transform: translateY(-50%);
+    gap: 20px;
+}
+.buttonControl{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#prevButton img{
+    height: 40px;
+    transform: rotate(180deg);
+}
+#nextButton img{
+    height: 40px;
+}
+
+.expecifcNeedSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+.formSimule{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    gap: 40px;
+}
+#formSolicite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+    max-width: 900px;
+    background-color: var(--var-ColorIce);
+    padding-top: 50px;
+    border-radius: 15px;
+}
+.ContentPartInput{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+}
+.ContentPartInput section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 50%;
+    gap: 20px;
+}
+.inputsBox{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.inputsBox label{
+    font-family: var(--var-FontOpenSans);
+    font-size: 12pt;
+    color: var(--var-ColorContrastWhite);
+    font-weight: 600;
+}
+.inputFormSolicite{
+    border: none;
+    border-bottom: 2px solid var(--var-ColorContrastWhite);
+    width: 250px;
+    height: 30px;
+    outline: none;
+    font-family: var(--var-FontOpenSans);
+    font-size: 12pt;
+    color: var(--var-ColorContrastWhite);
+}
+.buttonSubmitFormSolicite{
+    height: 60px;
+    width: 100%;
+    border: none;
+    background-image: linear-gradient(to right, var(--var-ColorYellowDark), #FDF19F, var(--var-ColorYellowDark));
+    margin-top: 30px;
+    font-family: var(--var-FontOpenSans);
+    font-size: 13pt;
+    font-weight: 600;
+    box-shadow: 0px 2px 10px 6px rgba(0, 0, 0, 0.155);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+.FooterPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    margin-top: 50px;
+}
+.beforeGlitterBoxFooter{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: black;
+}
+.beforeGlitterBoxFooter span:nth-child(1) img{
+    height: 450px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.beforeGlitterBoxFooter span:nth-child(2) img{
+    height: 450px;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0px;
+    bottom: 0px;
+}
+.sectionLogoFooter{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#LogomarcaFooter{
+    font-family: var(--var-FontBakersville);
+    font-weight: 100;
+    font-size: 15pt;
+    letter-spacing: 10px;
+    color: var(--var-ColorIce);
+    text-align: center;
+    margin-top: 20px;
+}
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+.logoFooter img{
+    height: 100px;
+    width: 110px;
+}
+.logoFooter span{
+    font-family: var(--var-FontBakersville);
+    font-size: 30pt;
+    font-weight: regular;
+    color: var(--var-ColorYellowClear)
+}
