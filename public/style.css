@@ -33,6 +33,7 @@ body{
     top: 0;
     left: 0;
     height: 100vh;
+    min-height: 95vh;
     width: 100%;
     z-index: -1;
     background-color: black;
@@ -50,7 +51,10 @@ body{
     left: 0px;
     bottom: 0px;
 }
-
+.beforeGlitterBox picture img{
+    max-width: 100%;
+    height: max-content;
+}
 
 #HeaderTopPage{
     position: relative;
@@ -399,6 +403,9 @@ body{
     left: 0px;
     bottom: 0px;
 }
+.beforeGlitterBoxFooter picture img{
+    max-width: 100%;
+}
 .sectionLogoFooter{
     width: max-content;
     display: flex;
@@ -472,5 +479,149 @@ body{
     }
     100%{
         transform: translateY(0px);
+    }
+}
+
+
+
+/*RESPONSIVIDADE--------------------------------------------------------------------------------------------*/
+@media (max-width: 1300px) {
+    .ContainerCards{
+        max-width: 95%;
+        gap: 20px;
+    }
+}
+@media (max-width: 1250px){
+    .logo img{
+        height: 200px;
+        width: 220px;
+    }
+    .logo span{
+        font-size: 40pt;
+    }
+    #LogomarcaTop{
+        font-size: 20pt;
+    }
+}
+@media (max-width: 1100px) {
+    .Card h2{
+        font-size: 13pt;
+        height: 30px;;
+    }
+}
+@media (max-width: 950px){
+    .Card p{
+        font-size: 11pt;
+    }
+    .containerBeneftsInfo{
+        width: max-content;
+    }
+    .boxBenefts img{
+        height: 20px
+    }
+    .boxBenefts p{
+        font-size: 12pt;
+    }
+}
+@media (max-width: 850px) {
+    .ContainerCards{
+        flex-direction: column;
+    }
+}
+@media (max-width: 800px) {
+    .ContentPartInput{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ContentPartInput section{
+        width: 100%;
+        align-items: center;
+    }
+}
+@media (max-width: 700px) {
+    .logo img{
+        height: 200px;
+        width: 220px;
+    }
+    .logo span{
+        font-size: 30pt;
+    }
+    #LogomarcaTop{
+        font-size: 15pt;
+    }
+}
+@media (max-height: 700px) {
+    .logo img{
+        height: 200px;
+        width: 220px;
+    }
+    .logo span{
+        font-size: 30pt;
+    }
+    #LogomarcaTop{
+        font-size: 15pt;
+    }
+}
+@media (max-width: 600px) {
+    .logo img{
+        height: 200px;
+        width: 220px;
+    }
+    .logo span{
+        font-size: 30pt;
+    }
+    #LogomarcaTop{
+        font-size: 13pt;
+        letter-spacing: 10px;
+    }
+    .titles{
+        font-size: 18pt;
+        width: 80%;
+    }
+    .containerBeneftsInfo{
+        width: 80%;
+        align-items: center;
+    }
+    .boxBenefts{
+        gap: 10px;
+    }
+    .boxBenefts p{
+        letter-spacing: 5px;
+    }
+    #ButtonWhatsapp img{
+        height: 60px;
+        width: 60px;
+    }
+}
+@media (max-height: 450px) {
+    .logo img{
+        height: 100px;
+        width: 110px;
+    }
+    .logo span{
+        font-size: 30pt;
+    }
+    #LogomarcaTop{
+        font-size: 15pt;
+    }
+}
+@media (max-width: 450px) {
+    .logoFooter span{
+        font-family: var(--var-FontBakersville);
+        font-size: 15pt;
+        font-weight: regular;
+        color: var(--var-ColorYellowClear)
+    }
+    #LogomarcaTop{
+        font-size: 12pt;
+        letter-spacing: 5px;
+    }
+    #LogomarcaFooter{
+        font-size: 12pt;
+        letter-spacing: 5px;
+    }
+    #ButtonWhatsapp{
+        right: 10px;
+        bottom: 10px;
     }
 }

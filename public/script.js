@@ -61,8 +61,13 @@ buttonSubmit.addEventListener("click", ()=>{
     var messageWhatsapp = "https://wa.me/5585989390143?text=Nome Completo:%0A"+
                             name+"%0A%0AEmail:%0A"+
                             email+"%0A%0AValor do Empréstimo:%0A"+
-                            value+"%0A%0ACNPJ/CPF:%0A"+
+                            value+" reais%0A%0ACNPJ/CPF:%0A"+
                             documento+"%0A%0ATelefone:%0A"+
                             phone
-    window.open(messageWhatsapp, "_blank")
+
+    if(name === "" || email === "" || value === "" || documento === "" || phone === ""){
+        window.alert("preencha todos os campos")
+    }else{
+        window.open(messageWhatsapp, "_blank")
+    }
 })
