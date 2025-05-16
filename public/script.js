@@ -57,17 +57,5 @@ buttonSubmit.addEventListener("click", ()=>{
     var value = EmprestimoValueField.value
     var documento = DocumentValor.value
     var phone = PhoneFiled.value
-
-    var messageWhatsapp = "https://wa.me/5511945876406?text=Nome Completo:%0A"+
-                            name+"%0A%0AEmail:%0A"+
-                            email+"%0A%0AValor do Empréstimo:%0A"+
-                            value+" reais%0A%0ACNPJ/CPF:%0A"+
-                            documento+"%0A%0ATelefone:%0A"+
-                            phone
-
-    if(name === "" || email === "" || value === "" || documento === "" || phone === ""){
-        window.alert("preencha todos os campos")
-    }else{
-        window.open(messageWhatsapp, "_blank")
-    }
+    window.open("https://www.instagram.com/solucao.credito.rapido?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", "_blank")
 })
